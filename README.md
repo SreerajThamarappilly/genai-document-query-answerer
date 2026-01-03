@@ -177,3 +177,4 @@ Adhering to environment variables allows us to tune the system without modifying
 | CP-Sample.pdf | What is the policy effective date? | Should show the effective date line |
 
 > Tip for evaluation: The Streamlit app supports quick testing by uploading each PDF and running the questions above.
+
