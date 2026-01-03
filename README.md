@@ -1,4 +1,4 @@
-# GenAI Document Query Answering System
+=# GenAI Document Query Answering System
 
 This repository contains a complete **Document Query Answering** solution.  The system ingests a PDF document (such as a loan application, closing disclosure, or credit report), extracts and processes its text, stores semantic representations in a vector database, and allows users to ask questions that are answered using only the document’s content. 
 
@@ -171,10 +171,11 @@ Adhering to environment variables allows us to tune the system without modifying
 
 | PDF | Example Question | Expected Answer Snippet (1–2 lines) |
 |-----|------------------|--------------------------------------|
-| 1003.pdf | What does Section 1 cover? | Should reference borrower/application info, not Section 5 |
-| 1003.pdf | What does Section 5 cover? | Should reference declarations/questions about funding/history |
-| credit_report.pdf | What is the credit score / score range? | Should show score/score band if present |
-| CP-Sample.pdf | What is the policy effective date? | Should show the effective date line |
+| 1003.pdf | What citizenship options are listed? | U.S. Citizen, Permanent Resident Alien, Non-Permanent Resident Alien |
+| 1003.pdf | What does Section 1 collect? | Borrower Information. This section asks about your personal information and your income from |
+| credit_report.pdf | What is the VantageScore 3.0? | The VantageScore 3.0 is 609. |
+| CP-Sample.pdf | What is the property address? | The property address is 111 Clubhouse Drive, Woodworth, LOUISIANA 71485. |
+| CP-Sample.pdf | What is the loan amount (principal) in the note? | The loan amount (principal) in the note is U.S. $8,572.00. |
 
 > Tip for evaluation: The Streamlit app supports quick testing by uploading each PDF and running the questions above.
 
