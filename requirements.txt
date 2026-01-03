@@ -1,0 +1,19 @@
+# requirements.txt
+# Exact versions pinned for deterministic installation on Python 3.11.3.
+PyMuPDF==1.26.7           # PDF parsing
+Pillow==12.1.0            # Image processing (OCR fallback)
+faiss-cpu==1.13.2         # Vector store (FAISS)
+numpy==2.4.0              # Math & array operations
+scikit-learn==1.8.0       # UMAP/visualization and utilities
+matplotlib==3.10.8        # Plotting for embedding visualization
+streamlit==1.52.2         # Web UI
+openai==2.14.0            # LLM & embedding API
+pytest==9.0.2             # Testing framework
+sentence-transformers==2.2.2   # Local embedding model
+huggingface_hub==0.14.1        # REQUIRED for sentence-transformers 2.2.2
+pytesseract==0.3.13            # OCR fallback for scanned PDFs
+langchain==1.2.0               # Core LangChain library for orchestrating chains/agents
+langchain-core==1.2.5          # Core internals; must align with langchain’s major version
+langchain-community==0.4.1     # Community utilities (tools/connectors), pinned to <0.4
+langsmith==0.5.2               # Optional metrics/tracing client for LangChain
+python-dotenv==1.2.1
